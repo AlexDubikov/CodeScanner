@@ -81,11 +81,11 @@ public struct CodeScannerView: UIViewControllerRepresentable {
             label.translatesAutoresizingMaskIntoConstraints = false
             label.numberOfLines = 0
 
-            label.text = "You're running in the simulator, which means the camera isn't available. Tap anywhere to send back some simulated data."
+            label.text = " "
             label.textAlignment = .center
             let button = UIButton()
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.setTitle("Or tap here to select a custom image", for: .normal)
+            button.setTitle(" ", for: .normal)
             button.setTitleColor(UIColor.systemBlue, for: .normal)
             button.setTitleColor(UIColor.gray, for: .highlighted)
             button.addTarget(self, action: #selector(self.openGallery), for: .touchUpInside)
